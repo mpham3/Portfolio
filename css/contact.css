@@ -1,0 +1,401 @@
+@font-face {
+    font-family: 'butlerlight';
+    src: url('butler_light-webfont.woff2') format('woff2'),
+         url('butler_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+  background: black;  
+}
+
+
+/*NAVIGATION*/
+.navd{
+  align-items: center;
+}
+
+/*INTRODUCTION*/
+
+/*FACE*/
+.smileface {
+  width:20%;
+  max-width:50px;
+  height: auto;
+  transform:rotateZ(-5deg);
+  position: relative;
+  top: 5px;
+  left: 50%;
+}
+.smile, .eyes {
+  stroke:#ffffff;
+  stroke-width: 0.5;
+  stroke-linecap:round;
+  fill:transparent;
+}
+
+.smileface:hover {animation:rotate 1.2s cubic-bezier(0.65, 0.000, 0.75, 1.000);}
+.smileface:hover .smile{animation: smile 1s cubic-bezier(0.2, 0.000, 0.8, 1.000);}
+.smileface:hover .eyes{animation: eyes 1s cubic-bezier(.7, 0.000, 0.4, 1.000);}
+
+@keyframes rotate { to { transform:rotateZ(720deg); } }
+@keyframes smile { 50% { stroke-dasharray:20,5.1327;} }
+@keyframes eyes  { 70% { stroke-dasharray:1,0,.5,23.6327;} }
+
+/* MAI & YOU */
+.maiyou {
+  position: absolute;
+  font-size: 160px;
+  width: 100%;
+  top: 30%;
+}
+
+.maiyou text {
+  fill: white;
+  stroke: white;
+  fill-opacity: 1;
+  stroke-width: 0;
+  stroke-dasharray: 100% 0;
+  animation: stroke-offset 3s ease-out;
+}
+
+@keyframes stroke-offset {
+  0% {
+    fill-opacity: 0;
+    stroke-width: 0;
+    stroke-dasharray: 0% 100%;
+  }
+  25% {
+    stroke-width: 0.5px;
+  }
+  50% {
+    fill-opacity: 0;
+  }
+  75% {
+    stroke-width: 2px;
+  }
+  100% {
+    stroke-width: 0;
+  }
+}
+/*ONLY YOU*/
+.oyou {
+  position: absolute;
+  font-size: 160px;
+  font-weight: bold;
+  width: 100%;
+  top: 30%;
+}
+
+.oyou text {
+  fill: black;
+  stroke: white;
+  fill-opacity: 1;
+  stroke-width: 1px;
+  stroke-dasharray: 100% 0;
+  animation: stroke-offset1 3s ease-out;
+}
+
+@keyframes stroke-offset1 {
+  0% {
+    fill-opacity: 0;
+    stroke-width: 0;
+    stroke-dasharray: 0% 100%;
+  }
+  25% {
+    stroke-width: 0.5px;
+  }
+  50% {
+    fill-opacity: 0;
+  }
+  75% {
+    stroke-width: 1px;
+  }
+  100% {
+    stroke-width: 1px;
+  }
+}
+/*BEHANCE*/
+.outsource{
+  text-decoration: none;
+}
+.container
+{
+  width: 100%;
+  height: 100%;
+}
+
+.effect
+{
+  position: absolute;
+  
+}
+
+.effect h1
+{
+  font-weight: 900;
+  font-size: 44px;
+  letter-spacing: 5px;
+  color: white;
+  display: table-cell;
+}
+.effect1
+{
+  position: absolute;
+  
+  
+}
+
+.effect1 h1
+{
+  font-weight: 900;
+  font-size: 44px;
+  letter-spacing: 5px;
+  color: white;
+  display: table-cell;
+}
+@media (min-width: 1400px) and (min-height: 800px){
+  .effect{
+  left: 22%;
+  top: 65%;
+  }
+  .effect1{
+  left: 68%;
+  top: 65%;
+  }
+}
+@media (min-width: 1400px) and (max-height: 799px){
+  .effect{
+  left: 22%;
+  top: 75%;
+  }
+  .effect1{
+  left: 68%;
+  top: 75%;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1399px) and (min-height: 700px){
+  .effect{
+  left: 20%;
+  top: 60%;
+  }
+  .effect1{
+  left: 64%;
+  top: 60%;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1399px) and (max-height: 699px){
+  .effect{
+  left: 20%;
+  top: 75%;
+  }
+  .effect1{
+  left: 64%;
+  top: 75%;
+  }
+}
+@media (max-width: 999px){
+  .effect{
+  left: 50%;
+  transform: translate(-50%,0);
+  top: 50%;
+  }
+  .effect1{
+  left: 50%;
+  transform: translate(-50%,0);
+  top: 60%;
+  }
+}
+/*BOTTOM NAVIGATION */
+.menubot{
+  position: absolute;
+  bottom: 40px;
+}
+.mem0{
+  left: 50px;
+}
+.mem1{
+  left: 200px;
+}
+.mem2{
+  left: 370px;
+}
+
+.wrapper {
+  --text-color: #fff;
+  position: relative;
+}
+.wrapper a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.wrapper a:nth-child(1) {
+  -webkit-clip-path: polygon(0 0, 100% 0, 50% 50%);
+  clip-path: polygon(0 0, 100% 0, 50% 50%);
+}
+.wrapper a:nth-child(2) {
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+  clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+}
+.wrapper a:nth-child(3) {
+  -webkit-clip-path: polygon(0 100%, 50% 50%, 100% 100%);
+  clip-path: polygon(0 100%, 50% 50%, 100% 100%);
+}
+.wrapper a:nth-child(4) {
+  -webkit-clip-path: polygon(0 0, 50% 50%, 0 100%);
+  clip-path: polygon(0 0, 50% 50%, 0 100%);
+}
+.wrapper a:hover {
+  -webkit-clip-path: none;
+  clip-path: none;
+  z-index: 2;
+}
+.wrapper a:nth-child(1):hover ~ .fill-text:before {
+  --fill-from: circle(0% at 50% 0%);
+  --fill-to: circle(150% at 0% 50%);
+  -webkit-animation: fill-text 1s forwards;
+          animation: fill-text 1s forwards;
+}
+.wrapper a:nth-child(1):hover ~ .fill-text:after {
+  --hover-text: "You hovered me from top";
+}
+.wrapper a:nth-child(2):hover ~ .fill-text:before {
+  --fill-from: circle(0% at 150% 50%);
+  --fill-to: circle(100% at 50% 50%);
+  -webkit-animation: fill-text 1s forwards;
+          animation: fill-text 1s forwards;
+}
+.wrapper a:nth-child(2):hover ~ .fill-text:after {
+  --hover-text: "You hovered me from right";
+}
+.wrapper a:nth-child(3):hover ~ .fill-text:before {
+  --fill-from: circle(0% at 50% 100%);
+  --fill-to: circle(150% at 0% 50%);
+  -webkit-animation: fill-text 1s forwards;
+          animation: fill-text 1s forwards;
+}
+.wrapper a:nth-child(3):hover ~ .fill-text:after {
+  --hover-text: "You hovered me from bottom";
+}
+.wrapper a:nth-child(4):hover ~ .fill-text:before {
+  --fill-from: circle(0% at 0% 50%);
+  --fill-to: circle(150% at 0% 50%);
+  -webkit-animation: fill-text 1s forwards;
+          animation: fill-text 1s forwards;
+}
+.wrapper a:nth-child(4):hover ~ .fill-text:after {
+  --hover-text: "You hovered me from left";
+}
+
+@-webkit-keyframes fill-text {
+  0% {
+    -webkit-clip-path: var(--fill-from);
+            clip-path: var(--fill-from);
+  }
+  100% {
+    -webkit-clip-path: var(--fill-to);
+            clip-path: var(--fill-to);
+    color: var(--text-color);
+  }
+}
+
+@keyframes fill-text {
+  0% {
+    -webkit-clip-path: var(--fill-from);
+            clip-path: var(--fill-from);
+  }
+  100% {
+    -webkit-clip-path: var(--fill-to);
+            clip-path: var(--fill-to);
+    color: var(--text-color);
+  }
+}
+.fill-text {
+  color: transparent;
+  -webkit-text-stroke: 0.3px var(--text-color);
+  text-stroke: 0.3px var(--text-color);
+  font-size: 50px;
+}
+.fill-text:before {
+  content: attr(data-text);
+  position: absolute;
+}
+
+
+/*EMAIL*/
+.contactme {
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+  perspective: 500px;
+  -webkit-perspective: 500px;
+}
+
+.contactbox {
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+}
+
+.contactbox:hover {
+  transform: rotateX(-90deg);
+}
+
+.contactinfo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  border: 4px solid #fff;
+  line-height: 50px;
+  text-align: center;
+}
+
+.contactinfo:nth-child(1) {
+  color: #fff;
+  transform: translate3d(0, 0, 30px);
+  -webkit-transform: translate3d(0, 0, 30px);
+}
+
+.contactinfo:nth-child(2) {
+  color: #460d12;
+  background: #fff;
+  transform: rotateX(90deg) translate3d(0, 0, 30px);
+  -webkit-transform: rotateX(90deg) translate3d(0, 0, 30px);
+}
+
+.contactbig {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  margin: 0;
+}
+@media (min-width: 1000px){
+  .contactbig {
+  top: 80%;}
+}
+@media (max-width: 999px){
+  .contactbig {
+  top: 75%;}
+}
+
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1000;
+}
+canvas {
+  position: absolute;
+  top: -62px;
+  left: 0;
+}
