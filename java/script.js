@@ -174,7 +174,7 @@ $(function () {
     var $window = $(window);
     function astonish() {
         
-        if ($window.width() > 748) {
+        if ($window.width() > 248) {
             var window_top = $window.scrollTop(), 
                 window_bottom = $window.height() * 0.5 + window_top; 
             $(".astonish:not(.animated)").each(function () {
