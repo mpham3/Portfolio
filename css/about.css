@@ -84,9 +84,39 @@ nav.open{
     font-size: 100px;
   }
 }
-@media (max-width: 899px){
+@media (min-width: 600px) and (max-width: 899px){
   .nav-links li a {
     font-size: 80px;
+  }
+}
+@media (max-width: 599px){
+  .nav-links li a {
+    font-size: 60px;
+  }
+}
+@media (min-height: 820px){
+  .nav-links li a {
+  line-height: 250px;
+  }
+}
+@media (min-height: 680px) and (max-height: 819px){
+  .nav-links li a {
+  line-height: 200px;
+  }
+}
+@media (min-height: 560px) and (max-height: 679px){
+  .nav-links li a {
+  line-height: 150px;
+  }
+}
+@media (min-height: 430px) and (max-height: 559px){
+  .nav-links li a {
+  line-height: 100px;
+  }
+}
+@media (max-height: 429px){
+  .nav-links li a {
+  line-height: 60px;
   }
 }
 .menu {
@@ -644,7 +674,7 @@ nav.open{
   left: 20%;
   }
 }
-@media (max-width: 1299px) and (min-height: 800px){
+@media (max-width: 1299px) and (min-width: 800px) and (min-height: 800px){
   .hides{
   font-size: 24px;
   max-width: 500px;
@@ -653,7 +683,7 @@ nav.open{
   transform: translate(-50%,0);
   }
 }
-@media (max-width: 1299px) and (min-height: 700px) and (max-height: 799px) {
+@media (max-width: 1299px) and (min-width: 800px) and (min-height: 700px) and (max-height: 799px) {
   .hides{
   font-size: 24px;
   max-width: 500px;
@@ -662,7 +692,7 @@ nav.open{
   transform: translate(-50%,0);
   }
 }
-@media (max-width: 1299px) and (min-height: 600px) and (max-height: 699px) {
+@media (max-width: 1299px) and (min-width: 800px) and (min-height: 600px) and (max-height: 699px) {
   .hides{
   font-size: 24px;
   max-width: 500px;
@@ -671,7 +701,7 @@ nav.open{
   transform: translate(-50%,0);
   }
 }
-@media (max-width: 1299px) and (min-height: 520px) and (max-height: 599px) {
+@media (max-width: 1299px) and (min-width: 800px) and (min-height: 520px) and (max-height: 599px) {
   .hides{
   font-size: 24px;
   max-width: 500px;
@@ -680,7 +710,7 @@ nav.open{
   transform: translate(-50%,0);
   }
 }
-@media (max-width: 1299px) and (min-height: 420px) and (max-height: 519px) {
+@media (max-width: 1299px) and (min-width: 800px) and (min-height: 420px) and (max-height: 519px) {
   .hides{
   font-size: 24px;
   max-width: 500px;
@@ -689,7 +719,7 @@ nav.open{
   transform: translate(-50%,0);
   }
 }
-@media (max-width: 1299px) and (min-height: 330px) and (max-height: 419px) {
+@media (max-width: 1299px) and (min-width: 800px) and (min-height: 330px) and (max-height: 419px) {
   .hides{
   font-size: 24px;
   max-width: 500px;
@@ -698,7 +728,7 @@ nav.open{
   transform: translate(-50%,0);
   }
 }
-@media (max-width: 1299px) and (min-height: 290px) and (max-height: 329px) {
+@media (max-width: 1299px) and (min-width: 800px) and (min-height: 290px) and (max-height: 329px) {
   .hides{
   font-size: 24px;
   max-width: 500px;
@@ -707,11 +737,29 @@ nav.open{
   transform: translate(-50%,0);
   }
 }
-@media (max-width: 1299px) and (min-height: 0px) and (max-height: 289px) {
+@media (max-width: 1299px) and (min-width: 800px) and (min-height: 0px) and (max-height: 289px) {
   .hides{
   font-size: 24px;
   max-width: 500px;
   top: 180%;
+  left: 50%;
+  transform: translate(-50%,0);
+  }
+}
+@media (min-width: 430px) and (max-width: 799px) {
+  .hides{
+  font-size: 20px;
+  max-width: 390px;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,0);
+  }
+}
+@media (max-width: 429px) {
+  .hides{
+  font-size: 20px;
+  max-width: 280px;
+  top: 70%;
   left: 50%;
   transform: translate(-50%,0);
   }
@@ -746,7 +794,7 @@ nav.open{
   }
 }
 
-@media (max-width: 1299px){
+@media (min-width: 430px) and (max-width: 1299px){
   .kz-photo {
   width: 400px;
   height: 400px;
@@ -762,7 +810,22 @@ nav.open{
   transform: translate(-50%,0);
   }
 }
+@media (max-width: 429px){
+  .kz-photo {
+  width: 300px;
+  height: 300px;
+  left: 50%;
+  transform: translate(-50%,0);
+  }
 
+.kz-photo img {
+  width: 287px;
+  height: 287px;
+  left: 50%;
+  top: 5px;
+  transform: translate(-50%,0);
+  }
+}
 
 .kz-photo {
   top: 17%;
@@ -1322,7 +1385,18 @@ nav.open{
   top: 1300px;
   }
 }
-
+@media (max-width: 380px){
+  .biglogo{
+    top: 620px;
+  }
+  .bioline {
+  top: 1040px;
+  font-size: 25px;
+  }
+  .contactbig {
+  top: 1300px;
+  }
+}
 /* CONTACT ME*/
 .contactme {
   width: 200px;
@@ -1374,4 +1448,28 @@ nav.open{
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   margin: 0;
+}
+
+@media (max-width: 610px){
+  .logo{
+      width: 50px;
+      height: 90px;
+      left: 8%;
+      top: 10px;
+  }
+  .menu {
+    top: -65px;
+    left: 46.5%;
+    width: 40px;
+    height: 50px;
+  }
+  .smileface {
+    width:20%;
+    max-width:40px;
+    height: 80px;
+    left: 85%;
+  }
+}
+html{
+  margin-left: -8px;
 }

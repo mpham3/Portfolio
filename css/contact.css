@@ -399,3 +399,67 @@ canvas {
   top: -62px;
   left: 0;
 }
+
+
+html{
+  margin-left: -8px;
+}
+@media(min-width: 375px) and (max-width: 540px){
+  .fill-text{
+    font-size: 40px;
+  }
+  .menubot{
+  position: absolute;
+  bottom: 0px;
+  }
+.mem0{
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 150px;
+}
+.mem1{
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 70px;
+}
+.mem2{
+  left: 50%;
+  transform: translateX(-50%);
+}
+}
+@media (max-width: 374px){
+  .fill-text{
+    font-size: 30px;
+  }
+  .menubot{
+  position: absolute;
+  bottom: 0px;
+  }
+.mem0{
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 105px;
+}
+.mem1{
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+}
+.mem2{
+  left: 50%;
+  transform: translateX(-50%);
+}
+}
+
+@media (min-width: 500px) and (max-width: 769px){
+  .smileface{
+    left: 47%;
+  }
+}
+@media (max-width: 499px){
+  .smileface{
+    left: 45%;
+  }
+}
+
+
